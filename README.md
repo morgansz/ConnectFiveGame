@@ -16,11 +16,9 @@ Handle invalid moves gracefully
 Declare a draw if the board is completely filled
 Option to quit the game at any point
 Installation
-Copy code
 
 pip install -r requirements.txt
 Usage
-Copy code
 
 python main.py
 Follow the prompts to start a new game, make moves, and view the board.
