@@ -1,0 +1,25 @@
+classDiagram
+    class Game {
+        -int size
+        -str[][] board
+        -str current_player
+        -bool game_over
+        +start_game(size: int) -> None
+        +make_move(column: int) -> bool
+        +is_winner() -> bool
+        +is_board_full() -> bool
+        +switch_player() -> None
+        +display_board() -> None
+    }
+
+    class UI {
+        -Game game
+        +start() -> None
+        +display_welcome_message() -> None
+        +display_board() -> None
+        +prompt_move() -> int
+        +display_game_status() -> None
+        +display_winner() -> None
+        +display_draw() -> None
+        +display_goodbye_message() -> None
+    }
